@@ -101,7 +101,7 @@ schema = StructType([
 df = spark.createDataFrame(data, schema)
 
 # Anahtar
-key = '5ad8f52071d25165e7e68064ab194ec2'
+key = '5ad8f52071d25165e7e68064ab56782'
 
 # Şifreleme UDF'ini kullanarak 'text' sütununu şifreleme
 df_encrypted = df.withColumn("encrypted_text", udf_encrypt(key)("text"))
